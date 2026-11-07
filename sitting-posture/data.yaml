@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['BadPosture', 'GoodPosture']
+
+roboflow:
+  workspace: angelinavalisha25-gmail-com
+  project: sitting-posture-oay3t-zrov7
+  version: 6
+  license: CC BY 4.0
+  url: https://app.roboflow.com/angelinavalisha25-gmail-com/sitting-posture-oay3t-zrov7/6
