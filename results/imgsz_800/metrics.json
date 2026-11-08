@@ -1,0 +1,62 @@
+{
+  "model": "yolov8s.pt (COCO-pretrained) fine-tuned",
+  "changed": {
+    "imgsz": 800
+  },
+  "hyperparameters": {
+    "data": "data.yaml",
+    "epochs": 50,
+    "patience": 15,
+    "imgsz": 800,
+    "batch": 16,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "seed": 0,
+    "deterministic": true,
+    "workers": 4,
+    "cache": "ram"
+  },
+  "epochs_run": 50,
+  "best_epoch": 38,
+  "train_minutes": 17.0,
+  "weights": "imgsz_800_best.pt",
+  "eval_imgsz": 800,
+  "split_sizes": {
+    "train": 1280,
+    "test": 160,
+    "val": 160
+  },
+  "overall": {
+    "validation (160)": {
+      "precision": 0.9859,
+      "recall": 0.989,
+      "F1": 0.9875,
+      "mAP50": 0.9941,
+      "mAP50-95": 0.7563
+    },
+    "test, all (160)": {
+      "precision": 0.9216,
+      "recall": 0.7899,
+      "F1": 0.8507,
+      "mAP50": 0.8761,
+      "mAP50-95": 0.4851
+    },
+    "test, team only (128)": {
+      "precision": 0.894,
+      "recall": 0.7654,
+      "F1": 0.8247,
+      "mAP50": 0.8482,
+      "mAP50-95": 0.4292
+    }
+  },
+  "val_speed_ms_per_image": {
+    "preprocess": 1.89,
+    "inference": 8.83,
+    "loss": 0.0,
+    "postprocess": 1.7
+  }
+}

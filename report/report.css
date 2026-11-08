@@ -1,0 +1,38 @@
+@page { size: letter; margin: 16mm 15mm 16mm 15mm; }
+:root {
+  --ink: #0b0b0b; --ink-2: #52514e; --muted: #7a7974; --rule: #e4e3df;
+  --surface: #ffffff; --tint: #f4f3ef; --accent: #2a78d6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--surface); color: var(--ink);
+  font: 10pt/1.45 "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+header { border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 12px; }
+.kicker { margin: 0; color: var(--ink-2); font-size: 8.5pt; letter-spacing: .04em; text-transform: uppercase; }
+h1 { margin: 2px 0 2px; font-size: 22pt; line-height: 1.15; }
+.byline { margin: 0; color: var(--ink-2); font-size: 9pt; }
+h2 { font-size: 13pt; margin: 16px 0 6px; padding-top: 4px; border-top: 1px solid var(--rule); break-after: avoid; }
+p { margin: 0 0 7px; }
+.lead { font-size: 10.5pt; margin: 10px 0 4px; }
+code { font: 8.5pt Consolas, monospace; background: var(--tint); padding: 0 3px; border-radius: 3px; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.tile { background: var(--tint); border-radius: 6px; padding: 8px 10px; display: flex; flex-direction: column; }
+.tile .num { font-size: 18pt; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tile .lbl { color: var(--ink-2); font-size: 8pt; line-height: 1.3; margin-top: 2px; }
+.tile.accent { border-left: 4px solid var(--accent); }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; break-inside: avoid; }
+img { display: block; break-inside: avoid; }
+img.full { width: 100%; margin: 4px 0 6px; }
+img.half { width: 100%; }
+table { border-collapse: collapse; width: 100%; font-size: 8.8pt; margin: 4px 0 4px;
+        font-variant-numeric: tabular-nums; break-inside: avoid; }
+th, td { padding: 3px 6px; border-bottom: 1px solid var(--rule); text-align: right; }
+thead th { color: var(--ink-2); font-weight: 600; border-bottom: 1.5px solid var(--ink-2); }
+tbody th, thead th:first-child { text-align: left; font-weight: 600; }
+table.kv th { white-space: nowrap; text-align: left; color: var(--ink-2); font-weight: 600; }
+table.kv td { text-align: left; }
+.caption { color: var(--muted); font-size: 8.3pt; margin-top: 0; }
+ul, ol { margin: 0 0 8px; padding-left: 18px; break-inside: avoid; }
+li { margin-bottom: 3px; }

@@ -1,0 +1,26 @@
+{
+  "conf": 0.25,
+  "iou": 0.5,
+  "images": 128,
+  "hands": 155,
+  "predictions": 147,
+  "correct": 118,
+  "precision": 0.8027,
+  "recall": 0.7613,
+  "F1": 0.7815,
+  "missed_hands": 29,
+  "wrong_class": 8,
+  "background_false_positives": 21,
+  "mean_IoU_correct": 0.7584,
+  "best_F1_conf": {
+    "conf": 0.6,
+    "precision": 0.8906,
+    "recall": 0.7355,
+    "F1": 0.8057
+  },
+  "predict_speed_ms_per_image": {
+    "preprocess": 0.98,
+    "inference": 37.86,
+    "postprocess": 0.23
+  }
+}

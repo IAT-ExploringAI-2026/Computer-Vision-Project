@@ -1,0 +1,13 @@
+# Gesture-controlled photo booth (Group 6). Built by prepare_dataset.py.
+# Paths are relative to the repo root; run training/evaluation from there.
+path: dataset
+train: images/train
+val: images/val
+test: images/test
+
+nc: 4
+names:
+  0: palm
+  1: fist
+  2: like
+  3: dislike

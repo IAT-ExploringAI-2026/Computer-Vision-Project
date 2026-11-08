@@ -1,0 +1,13 @@
+# Same dataset as data.yaml, but the test split is only the team's own photos (369-400).
+# Used for the team-only evaluation: model.val(data="data_team_test.yaml", split="test").
+path: dataset
+train: images/train
+val: images/val
+test: test_team.txt
+
+nc: 4
+names:
+  0: palm
+  1: fist
+  2: like
+  3: dislike
