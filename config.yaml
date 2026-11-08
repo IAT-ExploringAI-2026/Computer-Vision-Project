@@ -1,0 +1,13 @@
+path: D:/School/SFU/Fall 2026/IAT360/Project 1 Computer Vision/Computer-Vision-Project/Optimal Model2
+train: D:/School/SFU/Fall 2026/IAT360/Project 1 Computer Vision/Computer-Vision-Project/sitting-posture/train/images
+test: D:/School/SFU/Fall 2026/IAT360/Project 1 Computer Vision/Computer-Vision-Project/sitting-posture/test/images
+val: D:/School/SFU/Fall 2026/IAT360/Project 1 Computer Vision/Computer-Vision-Project/sitting-posture/valid/images
+
+# Classes
+nc: 2 # replace based on your dataset's number of classes
+
+# Class names
+# replace all class names with your own classes' names
+names:
+  0: BadPosture
+  1: GoodPosture
